@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/grey"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -36,7 +37,7 @@
                     android:paddingEnd="25dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+                    app:layout_constraintTop_toBottomOf="@+id/discoveryItem" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -74,6 +75,7 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="32dp"
+                    android:backgroundTint="@color/clrSearchBar"
                     android:background="@drawable/search_back"
                     android:drawableEnd="@drawable/ic_search"
                     android:drawablePadding="10dp"
@@ -93,7 +95,7 @@
                     android:layout_width="144dp"
                     android:layout_height="29dp"
                     android:layout_marginTop="8dp"
-                    android:text="Discovert Food"
+                    android:text="Discover Food"
                     android:textColor="#333533"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -101,7 +103,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recyclerView2"
+                    android:id="@+id/discoveryItem"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="8dp"
@@ -123,86 +125,16 @@
         android:layout_height="80dp"
         android:id="@+id/toolbar_button"
         android:layout_marginBottom="8dp"
-        android:background="@drawable/black_bar"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <LinearLayout
-            android:id="@+id/app_bar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="28dp"
-            android:layout_marginTop="12dp"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_house">
-
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_house">
-
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_house">
-
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/white"
-                    android:src="@drawable/ic_house">
-
-                </com.google.android.material.floatingactionbutton.FloatingActionButton>
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <!-- <com.google.android.material.bottomappbar.BottomAppBar
+         <com.google.android.material.bottomappbar.BottomAppBar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/app_bar"
             android:layout_gravity="bottom"
+            android:backgroundTint="#ffffff"
             app:fabCradleMargin="10dp">
 
             <LinearLayout
@@ -220,8 +152,9 @@
 
                     <ImageView
                         android:id="@+id/dashboard_account"
-                        android:layout_width="match_parent"
+                        android:layout_width="50dp"
                         android:layout_height="match_parent"
+                        android:background="@drawable/black_bar"
                         app:srcCompat="@drawable/ic_house" />
                 </LinearLayout>
 
@@ -267,7 +200,6 @@
             </LinearLayout>
 
         </com.google.android.material.bottomappbar.BottomAppBar>
--->
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
