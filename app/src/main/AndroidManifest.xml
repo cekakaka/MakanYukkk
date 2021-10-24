@@ -10,12 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MakanYukkk">
         <activity
-            android:name=".ProductActivity"
-            android:exported="true" />
-        <activity
-            android:name=".CartActivity"
-            android:exported="true" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

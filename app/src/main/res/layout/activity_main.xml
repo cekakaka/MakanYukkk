@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -29,6 +31,7 @@
                 android:layout_height="match_parent">
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/popularItem"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="8dp"
@@ -154,7 +157,6 @@
                         android:id="@+id/dashboard_account"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
-                        android:background="@drawable/black_bar"
                         app:srcCompat="@drawable/ic_house" />
                 </LinearLayout>
 
