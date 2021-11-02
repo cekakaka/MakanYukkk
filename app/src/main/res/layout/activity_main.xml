@@ -154,7 +154,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/dashboard_account"
+                        android:id="@+id/dashboard_home1"
                         android:layout_width="50dp"
                         android:layout_height="match_parent"
                         app:srcCompat="@drawable/ic_house" />
@@ -167,7 +167,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/dashboard_cart"
+                        android:id="@+id/dashboard_chat2"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/ic_chat" />
@@ -180,7 +180,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/dashboard_home"
+                        android:id="@+id/dashboard_cart2"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/ic_cart" />
@@ -193,7 +193,7 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/dashboard_chat"
+                        android:id="@+id/dashboard_account2"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         app:srcCompat="@drawable/ic_account" />

@@ -2,5 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/hammersmith_one</item>
+        <item>@font/montserrat</item>
+        <item>@font/muli_black</item>
     </array>
 </resources>

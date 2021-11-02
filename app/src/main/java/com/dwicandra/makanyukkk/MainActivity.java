@@ -1,12 +1,17 @@
 package com.dwicandra.makanyukkk;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.LinearInterpolator;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toolbar;
 
 import com.dwicandra.makanyukkk.Adapter.DiscoveryAdapter;
 import com.dwicandra.makanyukkk.Adapter.PopularAdapter;
@@ -27,6 +32,26 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerViewDiscovery();
         recyclerViewPopularList();
+        bottomNavigation();
+    }
+
+    private void bottomNavigation() {
+        ImageView dashboardHome = findViewById(R.id.dashboard_home1);
+        ImageView dashboardCart = findViewById(R.id.dashboard_cart2);
+
+        dashboardHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,CartListActivity.class));
+            }
+        });
+
+        dashboardCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,CartListActivity.class));
+            }
+        });
     }
 
     private void recyclerViewPopularList() {
@@ -35,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
         ArrayList<FoodDomain> foodList = new ArrayList<>();
-        foodList.add(new FoodDomain("Potato Chips","food1","",5.0));
-        foodList.add(new FoodDomain("Omlette","food2","",5.0));
+        foodList.add(new FoodDomain("Potato Chips","food1","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",5.0));
+        foodList.add(new FoodDomain("Omlette","food2","Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",5.0));
 
         adapter2 = new PopularAdapter(foodList);
         recyclerViewPopularList.setAdapter(adapter2);
