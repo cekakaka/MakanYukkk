@@ -58,6 +58,10 @@ public class ManagementCart {
        changeNumberItemsListener.changed();
     }
 
+    public void checkout()
+    {
+        Toast.makeText(context, "Checkout Selesai",Toast.LENGTH_SHORT).show();
+    }
     public Double getTotalFee(){
         ArrayList<FoodDomain> listFood2 = getListCart();
         double fee = 0;

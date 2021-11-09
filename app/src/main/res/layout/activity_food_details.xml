@@ -5,23 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:elevation="3dp"
+    android:background="@color/grey"
     tools:context=".FoodDetailsActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:background="@drawable/discovery_background2">
+                android:background="@drawable/discovery_background5">
 
                 <ImageView
                     android:id="@+id/foodPict"
@@ -31,12 +36,13 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/food1" />
+                    app:srcCompat="@drawable/ice_cream_1" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="40dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_margin="20dp"
+                    android:layout_marginBottom="16dp"
                     android:background="@drawable/plusminus_background"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/foodPict"
@@ -45,8 +51,8 @@
 
                     <ImageView
                         android:id="@+id/plusBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
@@ -54,12 +60,13 @@
 
                     <TextView
                         android:id="@+id/numberOrderTxt"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="18dp"
+                        android:layout_height="24dp"
                         android:layout_margin="10dp"
-                        android:layout_marginBottom="1dp"
-                        android:textColor="@color/black"
+                        android:gravity="center"
                         android:text="1"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
                         android:textSize="20dp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toTopOf="@+id/minusBtn"
@@ -69,8 +76,8 @@
 
                     <ImageView
                         android:id="@+id/minusBtn"
-                        android:layout_width="20dp"
-                        android:layout_height="27dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -89,9 +96,9 @@
                     android:id="@+id/titleTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fontFamily="@font/hammersmith_one"
-                    android:textColor="@color/black"
+                    android:fontFamily="@font/muli"
                     android:text="Title"
+                    android:textColor="@color/black"
                     android:textSize="28dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -101,9 +108,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="16dp"
-                    android:fontFamily="@font/hammersmith_one"
-                    android:textColor="@color/black"
+                    android:fontFamily="@font/muli_black"
                     android:text="$"
+                    android:textColor="@color/black"
                     android:textSize="28dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -113,9 +120,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/hammersmith_one"
+                    android:fontFamily="@font/muli"
                     android:text="Description"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/titleTxt" />

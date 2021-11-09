@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -30,6 +32,26 @@ public class CartListActivity extends AppCompatActivity {
 
         initView();
         initList();
+        calculateCart();
+        bottomNavigation();
+    }
+    private void bottomNavigation() {
+        ImageView dashboardHome = findViewById(R.id.dashboard_home1);
+        ImageView dashboardCart = findViewById(R.id.dashboard_cart2);
+
+        dashboardHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CartListActivity.this,MainActivity.class));
+            }
+        });
+
+        dashboardCart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CartListActivity.this,CartListActivity.class));
+            }
+        });
     }
 
     private void initList() {
@@ -51,6 +73,12 @@ public class CartListActivity extends AppCompatActivity {
             emptyTxt.setVisibility(View.GONE);
             scrollView.setVisibility(View.VISIBLE);
         }
+        checkout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                managementCart.checkout();
+            }
+        });
     }
 
     private void calculateCart(){
@@ -65,6 +93,7 @@ public class CartListActivity extends AppCompatActivity {
         deliveryTxt.setText("$"+delivery);
         totalTxt.setText("$"+ total);
     }
+
 
     private void initView() {
         recyclerViewList = findViewById(R.id.recycleView);

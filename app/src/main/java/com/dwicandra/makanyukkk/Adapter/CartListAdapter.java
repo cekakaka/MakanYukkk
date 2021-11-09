@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -89,7 +90,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        TextView title, priceEachItem, totalEachItem, num;
+        TextView title, priceEachItem, totalEachItem, num, checkout;
         ImageView pict, plusItem, minusItem;
 
         public ViewHolder(@NonNull View itemView) {
@@ -98,6 +99,7 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
             totalEachItem = itemView.findViewById(R.id.totalEachItem);
             pict = itemView.findViewById(R.id.pictCart);
             num = itemView.findViewById(R.id.numberItemTxt);
+            checkout = itemView.findViewById(R.id.checkout);
             plusItem = itemView.findViewById(R.id.plus2Btn);
             minusItem = itemView.findViewById(R.id.min2Btn);
         }

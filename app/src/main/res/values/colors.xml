@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="grey">#e9edc9</color>
+    <color name="grey">#e5e5e5</color>
     <color name="clrSearchBar">#fefae0</color>
     <color name="cardBackground">#FFFEFE</color>
     <color name="purple_700">#FF3700B3</color>

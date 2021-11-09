@@ -8,7 +8,7 @@
     android:layout_marginTop="10dp"
     android:layout_marginEnd="16dp"
     android:layout_marginBottom="10dp"
-    android:background="@color/cardBackground"
+    android:background="@drawable/food_card_background"
     android:elevation="3dp"
     android:textAlignment="center">
 
@@ -16,17 +16,19 @@
         android:id="@+id/pictCart"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/food1" />
+        app:srcCompat="@drawable/ice_cream_1" />
 
     <TextView
         android:id="@+id/title2Txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
         android:fontFamily="@font/muli_black"
         android:text="Title"
         android:textColor="@color/black"
@@ -40,6 +42,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/muli"
         android:text="0"
         android:textSize="20dp"
@@ -53,6 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
+        android:layout_marginBottom="8dp"
         android:fontFamily="@font/muli"
         android:text="$"
         android:textSize="20dp"
@@ -63,6 +67,8 @@
         android:id="@+id/plus2Btn"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_plus" />
@@ -71,12 +77,13 @@
         android:id="@+id/numberItemTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:fontFamily="@font/muli_black"
         android:text="1"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/min2Btn"
-        app:layout_constraintEnd_toEndOf="@+id/plus2Btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/plus2Btn"
         app:layout_constraintTop_toBottomOf="@+id/plus2Btn" />
 
@@ -84,8 +91,10 @@
         android:id="@+id/min2Btn"
         android:layout_width="30dp"
         android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/plus2Btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_minus" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

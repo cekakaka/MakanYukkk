@@ -12,6 +12,7 @@
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/drawable/discovery_background3.xml" value="0.22552083333333334" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/drawable/discovery_background4.xml" value="0.22552083333333334" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/drawable/discovery_background5.xml" value="0.22552083333333334" />
+        <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/drawable/food_card_background.xml" value="0.22552083333333334" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/drawable/ic_home.xml" value="0.22552083333333334" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/drawable/ic_search.xml" value="0.22552083333333334" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/drawable/numberlist_background.xml" value="0.240625" />
@@ -24,11 +25,11 @@
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_cart.xml" value="0.209375" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_cart_list.xml" value="0.2" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_discovery.xml" value="0.16168478260869565" />
-        <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_food_details.xml" value="0.14" />
-        <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_food_details.xml" value="0.18" />
+        <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/activity_product.xml" value="0.16893115942028986" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/hello.xml" value="0.12771739130434784" />
-        <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/viewholder_cart.xml" value="0.14945652173913043" />
+        <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/viewholder_cart.xml" value="0.33" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/viewholder_discovery.xml" value="0.5" />
         <entry key="..\:/AndroidProject/MakanYukkk/app/src/main/res/layout/viewholder_popular.xml" value="0.33" />
       </map>
